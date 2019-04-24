@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* Styling */
+@font-face {
+	font-family: "Merriweather";
+	font-style: normal;
+	font-weight: 300;
+	src: url("./Fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
+}
+h1{
+	font-size: 36px;
+}
+h2{
+    font-size: 25px;
+}
+p{
+	line-height: 1.25;
+	text-align: justify;
+}
+img{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.container{
+	width: 880px;
+	height: 100%;
+    margin: 0 auto;
+}
+
+.container header{
+    background-image: linear-gradient(silver, lightgrey);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 0 0 15px 15px;
+}
+.container header nav{
+	display: flex;
+	justify-content: space-around;
+	align-content: space-evenly;
+	align-items: center;
+}
+.container header nav a{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.container header nav a:hover{
+	color: orangered;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+
+div.main-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-evenly;
+}
+
+div.main-content div.vision {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+	padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+div.main-content div.vision div{
+    width: 48%;
+}
+
+div.main-content div.vision img{
+    height: 300px;
+    width: 300px;
+    align-self: center;
+    margin-right: 30px;
+}
+
+div.main-content section{
+    display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+    width: inherit;
+    text-align: center;
+}
+
+div.main-content section div{
+	border: 1px solid rgb(117, 117, 117);
+	padding: 25px;
+    background-image: radial-gradient(silver, grey);
+    width: 97%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+div.main-content section div p{
+    width: 80%;
+    margin: 0 auto;
+}
+div.main-content section button{
+	margin: 20px 0;
+	width: 150px;
+	height: 36px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+div.main-content section button:hover{
+	cursor: pointer;
+	transform: scale(1.02, 1.02);
+	transition: all 0.3s;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgb(49, 49, 49);
+}
+div.main-content div.facts{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-evenly;
+	border-top: 2px solid black;
+	padding: 35px 0;
+	margin-bottom: 50px;
+}
+div.main-content div.facts div{
+	padding: 20px 0;
+	width: 48%;
+}
+div.main-content div.facts ul{
+	margin-top: 25px;
+	list-style-type: square;
+	list-style-position: inside;
+}
+div.main-content div.facts ul li{
+	padding: 5px 0;
+}
+div.main-content div.facts img{
+    width: 48%;
+    height: 48%;
+    align-self: center;
+}
+div.container p.copyright{
+    align-self: center;
+	margin-bottom: 25px;
+}
