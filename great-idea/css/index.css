@@ -64,3 +64,133 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+div.container {
+	width: 876px;
+	margin: 0 auto;
+}
+
+div.container p {
+	font-family: Merriweather, 'Times New Roman', Times, serif;
+	line-height: 1.3;
+}
+
+div.container header {
+	background-color: rgb(238, 238, 238);
+	padding: 20px;
+	border-left: 3px solid rgb(170, 170, 170);
+	border-right: 3px solid rgb(170, 170, 170);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: inherit;
+}
+
+div.container header nav {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+div.container header nav a {
+	color: rgb(161, 161, 161);
+	text-decoration: none;
+	
+}
+
+div.container header nav a:hover {
+	color: orange;
+	transition: all 0.3s;
+}
+
+div.container header nav a.logo {
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 183px;
+	height: 36px;
+}
+
+div.container section {
+	padding-top: 110px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div.container section div.slogan {
+	font-size: 68px;
+	text-align: center;
+}
+
+div.container section div.slogan button {
+	width: 150px;
+	height: 30px;
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+div.container section div.slogan button:hover {
+	transform: scale(1.2, 1.2);
+	transition: all 0.3s;
+}
+
+div.container section div.code-snippet {
+	background-image: url("../img/header-img.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 379px;
+	width: 379px;
+}
+
+div.main-content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 25px 0;
+}
+
+div.main-content section {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: flex-start;
+}
+
+div.main-content section div {
+	width: 50%;
+}
+
+div.main-content div.middle-img {
+	margin: 25px auto;
+	background-image: url("../img/mid-page-accent.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 876px;
+	height: 182px;
+}
+
+div.main-content div {
+	width: 33%;
+}
+
+div.container address {
+	margin: 25px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+div.container address p:nth-child(4) {
+	margin: 20px 0;
+}
+
+div.container p.copyright {
+	text-align: center;
+	margin: 50px 0;
+}
